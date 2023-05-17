@@ -1,5 +1,5 @@
 function configureListeners() {
-    let images = document.getElementsByTagName('img')
+    var images = document.getElementsByTagName('img')
     // select img elements  
 
 
@@ -20,7 +20,7 @@ function addOpacity(event) {
 
 function removeOpacity(event) {
      //remove appropriate CSS class
-     if (!this.classList.contains('dim')){
+     if (this.classList.contains('dim')){
         this.classList.remove('dim');
      }
 
@@ -59,31 +59,31 @@ function getProductInfo(paintColor) {
         case 'pn4':
             // set variables for price and color name and invoke a function to update the price
             price = '$4.99'   
-            colorName ='Solid Black'
+            colorName ='Solid Red'
             updatePrice(colorName, price)  
             break;   
         case 'pn5':
             // set variables for price and color name and invoke a function to update the price
             price = '$8.22'   
-            colorName ='Solid Cyan'
+            colorName ='Solid White'
             updatePrice(colorName, price)       
             break;   
         case 'pn6':
             // set variables for price and color name and invoke a function to update the price
             price = '$11.99'   
-            colorName ='Solid Purple'
+            colorName ='Solid Black'
             updatePrice(colorName, price)        
             break;   
         case 'pn7':
             // set variables for price and color name and invoke a function to update the price 
             price = '$13.12'   
-            colorName ='Solid Red'
+            colorName ='Solid Cyan'
             updatePrice(colorName, price)
             break;   
         case 'pn8':
             // set variables for price and color name and invoke a function to update the price
             price = '$21.98'   
-            colorName ='Solid White'
+            colorName ='Solid Purple'
             updatePrice(colorName, price)   
             break;   
         case 'pn9':
